@@ -1,4 +1,4 @@
-package com.bilalasiftwofive.roomvvm;
+package com.bilalasiftwofive.roomvvm.roominterface;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,6 +6,8 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.bilalasiftwofive.roomvvm.model.Note;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.bilalasiftwofive.roomvvm;
+package com.bilalasiftwofive.roomvvm.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bilalasiftwofive.roomvvm.R;
+import com.bilalasiftwofive.roomvvm.model.Note;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +43,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         notifyDataSetChanged();
     }
 
-    class NoteHolder extends RecyclerView.ViewHolder {
+    static class NoteHolder extends RecyclerView.ViewHolder {
         private TextView textViewtile;
         private TextView textViewDescription;
         private TextView textViewPriority;

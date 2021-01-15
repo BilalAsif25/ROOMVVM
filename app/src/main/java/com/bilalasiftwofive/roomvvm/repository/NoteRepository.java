@@ -1,10 +1,13 @@
-package com.bilalasiftwofive.roomvvm;
+package com.bilalasiftwofive.roomvvm.repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
-import androidx.room.Dao;
+
+import com.bilalasiftwofive.roomvvm.model.Note;
+import com.bilalasiftwofive.roomvvm.roomdb.NoteDatabase;
+import com.bilalasiftwofive.roomvvm.roominterface.NoteDAO;
 
 import java.util.List;
 

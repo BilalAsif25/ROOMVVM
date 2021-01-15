@@ -1,4 +1,4 @@
-package com.bilalasiftwofive.roomvvm;
+package com.bilalasiftwofive.roomvvm.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.bilalasiftwofive.roomvvm.R;
 
 public class AddNoteActivity extends AppCompatActivity {
 

@@ -1,10 +1,13 @@
-package com.bilalasiftwofive.roomvvm;
+package com.bilalasiftwofive.roomvvm.viewmodel;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+
+import com.bilalasiftwofive.roomvvm.model.Note;
+import com.bilalasiftwofive.roomvvm.repository.NoteRepository;
 
 import java.util.List;
 

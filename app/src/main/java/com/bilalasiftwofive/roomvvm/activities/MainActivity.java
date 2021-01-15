@@ -1,4 +1,4 @@
-package com.bilalasiftwofive.roomvvm;
+package com.bilalasiftwofive.roomvvm.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bilalasiftwofive.roomvvm.model.Note;
+import com.bilalasiftwofive.roomvvm.adapters.NoteAdapter;
+import com.bilalasiftwofive.roomvvm.viewmodel.NoteViewModel;
+import com.bilalasiftwofive.roomvvm.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
