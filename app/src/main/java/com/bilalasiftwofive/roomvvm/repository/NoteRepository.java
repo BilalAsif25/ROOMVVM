@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData;
 
 import com.bilalasiftwofive.roomvvm.model.Note;
 import com.bilalasiftwofive.roomvvm.roomdb.NoteDatabase;
-import com.bilalasiftwofive.roomvvm.roominterface.NoteDAO;
+import com.bilalasiftwofive.roomvvm.roomdao.NoteDAO;
 
 import java.util.List;
 

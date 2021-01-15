@@ -1,4 +1,4 @@
-package com.bilalasiftwofive.roomvvm.roominterface;
+package com.bilalasiftwofive.roomvvm.roomdao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
