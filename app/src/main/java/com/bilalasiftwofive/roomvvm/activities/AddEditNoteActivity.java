@@ -14,7 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bilalasiftwofive.roomvvm.R;
 
-public class AddNoteActivity extends AppCompatActivity {
+public class AddEditNoteActivity extends AppCompatActivity {
+
+    public static final String EXTRA_ID = "com.bilalasiftwofive.roomvvm.EXTRA_ID";
 
     public static final String EXTRA_TITLE = "com.bilalasiftwofive.roomvvm.EXTRA_TITLE";
 
@@ -39,7 +41,16 @@ public class AddNoteActivity extends AppCompatActivity {
         mNumberPickerPriority.setMaxValue(10);
 
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
-        setTitle("Add Note");
+
+        Intent intent = getIntent();
+        if (intent.hasExtra(EXTRA_ID)) {
+            setTitle("Edit Note");
+            mEditTextTitle.setText(intent.getStringExtra(EXTRA_TITLE));
+            mEditTextDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
+            mNumberPickerPriority.setValue(intent.getIntExtra(EXTRA_ID, 1));
+        } else {
+            setTitle("Add Note");
+        }
 
     }
 
@@ -57,6 +68,12 @@ public class AddNoteActivity extends AppCompatActivity {
         intentData.putExtra(EXTRA_TITLE, title);
         intentData.putExtra(EXTRA_DESCRIPTION, description);
         intentData.putExtra(EXTRA_PRIORITY, priority);
+
+        int id = getIntent().getIntExtra(EXTRA_ID, -1);
+        if (id != -1) {
+            intentData.putExtra(EXTRA_ID, id);
+        }
+
         setResult(RESULT_OK, intentData);
         finish();
     }
